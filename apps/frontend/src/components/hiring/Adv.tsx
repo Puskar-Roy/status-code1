@@ -5,8 +5,8 @@ import AdvCard from "./card"
 const AdvC: React.FC = () => {
   const cardsData = [
     {
-      title: 'Carpentor',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ipsum voluptate fuga dolore dolor '
+      title: 'Carpenter',
+      description: 'a skilled carpenter in your area , offering expert craftmanship for future making, repairs and custom woodwork, ensuring quality and durability in every project'
     },
     {
       title: 'Electrician',
