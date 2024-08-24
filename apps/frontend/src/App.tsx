@@ -17,6 +17,9 @@ import Offer from "./components/offer request/Offer-request";
 import Hiring from "./components/hiring/Hired";
 import Not_Found from "./components/not found/Not_Found";
 import HelpRequest from "./components/help request/HelpRequest";
+import CallNow from "./components/offer request/CallNow";
+import ServiceP from "./components/services provider/ServiceP";
+import SubmitOffer from "./components/offer request/SubmitOffer";
 
 
 function App() {
@@ -39,8 +42,11 @@ function App() {
           <Route path="/contact" element={isProfileComplete ? <Contact /> : <Navigate to="/profile" />} />
           <Route path="/offer-support" element={isProfileComplete ? <Offer /> : <Navigate to="/profile" />} />
           <Route path="/hiring" element= {isProfileComplete ? <Hiring/> : <Navigate to="/profile" /> } />
+          <Route path="/services" element={<ServiceP/>} />
           <Route path="/help-request" element={<HelpRequest />} />
           <Route path="/page-not-found" element={<Not_Found />} />
+          <Route path="/offer-support/call-now" element={<CallNow />} />
+          <Route path="/offer-support/submit-offer" element={<SubmitOffer />} />
         </Routes>
       </ThemeProvider>
       <Footer />
