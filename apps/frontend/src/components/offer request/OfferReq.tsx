@@ -171,7 +171,7 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <h3 className="text-lg font-medium">Phone Support</h3>
             <p className="text-muted-foreground  dark:text-white">Speak with one of our support representatives by phone.</p>
             <Link
-              to="#"
+              to="/offer-support/call-now"
               className="inline-flex h-9 items-center justify-center bg-primary px-4 py-2 active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white text-sm font-semibold"
         
             >
