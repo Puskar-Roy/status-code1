@@ -10,19 +10,19 @@ const AdvC: React.FC = () => {
     },
     {
       title: 'Electrician',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolorem quisquam incidunt nostrum!'
+      description: 'An experienced electrician in your area, providing reliable services for wiring,repairs, and installations, ensuring safety and efficiency in all electrical work'
     },
     {
       title: 'Plumber',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolorem incidunt nostrum!'
+      description: 'A dependable plumber in your area, specializing in repairs, installations, and maintenance of pipes, fixtures, and drainage, systems for a hassle-free experience'
     },
     {
       title: 'Painter',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolorem quisquam incidunt nostrum!'
+      description: 'A professional painter in your area, offering high-quality interior and exterior painting services to refresh and beautify your spaces with precision and care'
     },
     {
       title: 'Mechanic',
-      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore dolorem incidunt nostrum!'
+      description: 'A skilled mechanic in your area, providing expert vehicle repair and maintenance services, ensuring your car runs smoothly and reliably.'
     }
   ];
 
