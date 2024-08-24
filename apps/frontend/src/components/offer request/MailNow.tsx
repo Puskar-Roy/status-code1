@@ -1,4 +1,4 @@
-import log_img from "../../assets/calling-animate.svg";
+import log_img from "../../assets/mail-animate.svg";
 
 export default function CallNow(): JSX.Element {
   return (
