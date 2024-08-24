@@ -19,6 +19,7 @@ import Not_Found from "./components/not found/Not_Found";
 import HelpRequest from "./components/help request/HelpRequest";
 import CallNow from "./components/offer request/CallNow";
 import ServiceP from "./components/services provider/ServiceP";
+import SubmitOffer from "./components/offer request/SubmitOffer";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
           <Route path="/help-request" element={<HelpRequest />} />
           <Route path="/page-not-found" element={<Not_Found />} />
           <Route path="/offer-support/call-now" element={<CallNow />} />
+          <Route path="/offer-support/submit-offer" element={<SubmitOffer />} />
         </Routes>
       </ThemeProvider>
       <Footer />
