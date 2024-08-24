@@ -11,6 +11,8 @@ import profileRoutes from "./routes/profileRoutes";
 import jobRoutes from "./routes/jobRoutes";
 import petPostRoutes from "./routes/petPostRoutes";
 import userRoutes from './routes/user.routes'
+import wasteRoutes from './routes/wasteRouter';
+import ordersRoutes from './routes/ordersRouter'
 import donationPostRoutes from "./routes/donationPostsRoutes";
 
 const app: Express = express();
@@ -25,6 +27,10 @@ app.use("/api/v0.1/profiles", profileRoutes);
 app.use("/api/v0.1/job", jobRoutes);
 app.use("/api/v0.1/petPosts", petPostRoutes);
 app.use("/api/v0.1/donationPosts", donationPostRoutes);
+app.use("/api/v0.1/wastes", wasteRoutes);
+app.use("/api/v0.1/orders", ordersRoutes);
+
+
 app.use("/api/v0.1", userRoutes);
 
 app.get("/", (req, res) => {

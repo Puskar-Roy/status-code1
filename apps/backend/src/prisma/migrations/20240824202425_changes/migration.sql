@@ -98,6 +98,34 @@ CREATE TABLE "OTP" (
     CONSTRAINT "OTP_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
+CREATE TABLE "WastePosts" (
+    "id" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+    "authorId" TEXT NOT NULL,
+    "wasteImage" TEXT,
+    "price" DOUBLE PRECISION NOT NULL,
+    "views" INTEGER NOT NULL DEFAULT 0,
+    "status" "Status" NOT NULL DEFAULT 'PENDING',
+
+    CONSTRAINT "WastePosts_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "Order" (
+    "id" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+    "wastePostId" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "quantity" INTEGER NOT NULL,
+    "totalPrice" DOUBLE PRECISION NOT NULL,
+    "status" "Status" NOT NULL DEFAULT 'PENDING',
+
+    CONSTRAINT "Order_pkey" PRIMARY KEY ("id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
 
@@ -118,3 +146,12 @@ ALTER TABLE "DonationPosts" ADD CONSTRAINT "DonationPosts_authorId_fkey" FOREIGN
 
 -- AddForeignKey
 ALTER TABLE "OTP" ADD CONSTRAINT "OTP_authorId_fkey" FOREIGN KEY ("authorId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "WastePosts" ADD CONSTRAINT "WastePosts_authorId_fkey" FOREIGN KEY ("authorId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Order" ADD CONSTRAINT "Order_wastePostId_fkey" FOREIGN KEY ("wastePostId") REFERENCES "WastePosts"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "Order" ADD CONSTRAINT "Order_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
