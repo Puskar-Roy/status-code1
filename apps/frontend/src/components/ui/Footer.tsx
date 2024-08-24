@@ -38,7 +38,7 @@ function Footer() {
           <span className="block text-sm text-black dark:text-gray-300 sm:text-center">
             © Design And Developed By{" "}
             <Link to="/" className="hover:underline">
-              Bug_Busters™
+              Kube_Crafter™
             </Link>
           </span>
         </div>
