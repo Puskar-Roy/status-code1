@@ -18,6 +18,7 @@ import Hiring from "./components/hiring/Hired";
 import Not_Found from "./components/not found/Not_Found";
 import HelpRequest from "./components/help request/HelpRequest";
 import CallNow from "./components/offer request/CallNow";
+import MailNow from "./components/offer request/MailNow";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/help-request" element={<HelpRequest />} />
           <Route path="/page-not-found" element={<Not_Found />} />
           <Route path="/offer-support/call-now" element={<CallNow />} />
+          <Route path="/offer-support/mail-now" element={<MailNow />} />
         </Routes>
       </ThemeProvider>
       <Footer />

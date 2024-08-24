@@ -21,7 +21,7 @@
 //                         <option value="">Choose</option>
 //                         <option value="">Owner</option>
 //                         <option value="">Member</option>
-  
+
 //                       </select>
 //                     </div> 
 //                     <div className="w-full flex flex-col mb-3">
@@ -52,7 +52,7 @@
 //                         <option value="">Choose</option>
 //                         <option value="">Free</option>
 //                         <option value="">Paid</option>
-  
+
 //                       </select>
 //                     </div> 
 //                     <div className="w-full flex flex-col mb-3">
@@ -67,7 +67,7 @@
 //                         <option value="">Choose</option>     
 //                         <option value="">Owner</option>
 //                         <option value="">Member</option>
-  
+
 //                       </select>
 //                     </div> 
 //                   </div>
@@ -129,7 +129,7 @@
 //       </div>
 //     );
 //   };
-  
+
 //   export default OfferReqForm;
 
 
@@ -142,9 +142,9 @@ import req_img from "../../assets/contact-us-animate (1).svg";
 
 export default function OfferReq() {
 
-const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-};
+  };
   return (
     <div className="flex flex-col min-h-screen">
       <section className="w-full py-2 md:py-5 lg:py-5">
@@ -158,7 +158,7 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
           <Link
             to="#"
             className="ml-[175px] mt-[20px] inline-flex items-center justify-center w-[310px] active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 text-white text-lg font-semibold"
-           
+
           >
             Get Support
           </Link>
@@ -173,7 +173,6 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <Link
               to="/offer-support/call-now"
               className="inline-flex h-9 items-center justify-center bg-primary px-4 py-2 active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white text-sm font-semibold"
-        
             >
               Call Now
             </Link>
@@ -185,7 +184,6 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <Link
               to="#"
               className="inline-flex h-9 items-center justify-center  bg-primary px-4 py-2 text-sm active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white  font-semibold"
-           
             >
               Start Chat
             </Link>
@@ -195,9 +193,8 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <h3 className="text-lg font-medium">Email Support</h3>
             <p className="text-muted-foreground  dark:text-white">Send us an email and we'll get back to you and help you.</p>
             <Link
-              to="#"
+              to="/offer-support/mail-now"
               className="inline-flex h-9 items-center justify-center bg-primary px-4 py-2 text-sm active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white font-semibold"
-           
             >
               Send Email
             </Link>
@@ -209,7 +206,7 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <Link
               to="#"
               className="inline-flex h-9 items-center justify-center bg-primary px-4 py-2 text-sm active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white font-semibold"
-           
+
             >
               View Knowledge Base
             </Link>
@@ -221,7 +218,7 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <Link
               to="#"
               className="inline-flex h-9 items-center justify-center bg-primary px-4 py-2 text-sm active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white font-semibold"
-           
+
             >
               Submit Ticket
             </Link>
@@ -233,7 +230,7 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             <Link
               to="#"
               className="inline-flex h-9 items-center justify-center bg-primary px-4 py-2 text-sm active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-500 text-white font-semibold"
-           
+
             >
               Schedule Call
             </Link>
@@ -249,61 +246,61 @@ const handleClick = async (event: React.FormEvent<HTMLFormElement>) => {
             </p>
           </div>
           <div className="w-full flex">
-           <div className="grid grid-cols-1 md:grid-cols-2">
-          <div className="w-full h-[450px] md:block">
-          <img
-            className="w-full h-[380px]"
-            src={req_img}
-            alt="Contact Ilustration"
-          />
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              <div className="w-full h-[450px] md:block">
+                <img
+                  className="w-full h-[380px]"
+                  src={req_img}
+                  alt="Contact Ilustration"
+                />
+              </div>
+              <div className="p-5 ">
+                <form onSubmit={handleClick}>
+                  <div className="mr-[35vh]">
+                    <input
+                      id="fullName"
+                      name="fullName"
+                      className="border px-4 py-2 mt-4  w-[400px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600 "
+                      type="text"
+                      placeholder="Enter your Name"
+                    />
+                    <input
+                      id="email"
+                      name="email"
+                      className="border px-4 py-2 mt-4 w-[400px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600"
+                      type="email"
+                      placeholder="Enter your email address"
+                    />
+
+                    <input
+                      id="subject"
+                      name="subject"
+                      className="border px-3 py-2 mt-4 w-[400px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600"
+                      type="text"
+                      placeholder="Enter Your Subject"
+                    />
+
+                    <textarea
+                      id="message"
+                      name="message"
+                      className="border py-2 px-4 mt-4 resize-y text-base w-[400px] h-[100px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600"
+                      placeholder="Describe Your Message"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="mt-[5vh] mr-[20vh] w-[180px] active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 text-white text-lg font-semibold poppins-extrabold"
+                  >
+                    Submit
+                  </button>
+                </form>
+
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="p-5 ">
-        <form onSubmit={handleClick}>
-        <div className="mr-[35vh]">
-         <input
-           id="fullName"
-           name="fullName"
-           className="border px-4 py-2 mt-4  w-[400px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600 "
-           type="text"
-           placeholder="Enter your Name"
-            />
-         <input
-         id="email"
-         name="email"
-         className="border px-4 py-2 mt-4 w-[400px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600"
-         type="email"
-         placeholder="Enter your email address"
-         />
-
-         <input
-         id="subject"
-         name="subject"
-         className="border px-3 py-2 mt-4 w-[400px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600"
-         type="text"
-         placeholder="Enter Your Subject"
-         />
-
-       <textarea
-        id="message"
-        name="message"
-        className="border py-2 px-4 mt-4 resize-y text-base w-[400px] h-[100px] rounded-xl bg-slate-100 dark:bg-slate-600 dark:border-slate-600"
-        placeholder="Describe Your Message"
-        />
-     </div>
-
-  <button
-    type="submit"
-    className="mt-[5vh] mr-[20vh] w-[180px] active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all p-2.5 rounded-3xl bg-gradient-to-r from-blue-700 to-blue-500 text-white text-lg font-semibold poppins-extrabold"
-  >
-    Submit
-         </button>
-    </form>
-
-
-        </div>
-      </div>
-      </div>
-      </div>
       </section>
     </div>
   )
