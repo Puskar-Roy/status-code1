@@ -13,7 +13,7 @@ function Footer() {
             >
               <img src={logo} height={50} width={50} alt="logo" />
               <h2 className="text-2xl font-bold text-black dark:text-white">
-                UNITE
+                CARE
               </h2>
             </Link>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-black dark:text-gray-300 sm:mb-0">
