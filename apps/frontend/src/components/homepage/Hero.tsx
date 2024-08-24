@@ -27,7 +27,7 @@ const Hero = () => {
         <h1
           data-aos={'fade-up'}
           className="max-w-7xl mx-auto text-center font-manrope dark:text-white font-bold text-4xl text-gray-900 mb-5 md:text-6xl leading-[50px]">
-          Join events, offer services, or get help securely with <span className="text-blue-600">Unite.</span>
+          Join events, offer services, or get help securely with <span className="text-blue-600">CARE .</span>
         </h1>
         <p data-aos={'fade-down'} className="max-w-sm mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9">
           Join our platform effortlessly and start making a difference in your community today.
