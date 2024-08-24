@@ -17,7 +17,7 @@ const CardsSection = () => {
         <h1 className="font-manrope dark:text-white text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px]text-center sm:text-left sm:text-6xl font-bold text-grey-900">
         If you need assistance <br /> 
           <span className={` font-extrabold text-blue-600`}>
-            Unite
+            CARE.
           </span> <br/>
           makes it   simple  to <br/>request help.
         </h1>
