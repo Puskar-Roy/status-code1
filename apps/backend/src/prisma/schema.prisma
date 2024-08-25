@@ -100,6 +100,8 @@ model WastePosts {
   views       Int      @default(0)
   orders      Order[]
   status      Status   @default(PENDING)
+  lat         Float?
+  long        Float?
 }
 
 model Order {
