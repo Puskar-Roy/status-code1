@@ -4,8 +4,8 @@ export default function Search() {
     <div className="h-[300px] mt-[3vh]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto ">
       <div className="text-center mb-8 ">
-        <h1 className="text-5xl text-slate-800 font-bold mb-2">Hire a Skilled<span className="text-blue-500"> Member </span></h1>
-        <p className="text-gray-600 mt-5">
+        <h1 className="text-5xl text-slate-800 font-bold mb-2 dark:text-white">Hire a Skilled<span className="text-blue-500"> Member </span></h1>
+        <p className="text-gray-600 mt-5 dark:text-white">
           Search for workers by name, specialty, or condition
           from our comprehensive list of experts.
         </p>
