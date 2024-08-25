@@ -23,6 +23,7 @@ import CallNow from "./components/offer request/CallNow";
 import MailNow from "./components/offer request/MailNow";
 import ServiceP from "./components/services provider/ServiceP";
 import SubmitOffer from "./components/offer request/SubmitOffer";
+import Component from "./components/MPTest/Card";
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
           <Route path="/offer-support/call-now" element={<CallNow />} />
           <Route path="/offer-support/mail-now" element={<MailNow />} />
           <Route path="/offer-support/submit-offer" element={<SubmitOffer />} />
+          <Route path="/card" element={<Component />} />
         </Routes>
       </ThemeProvider>
       <Footer />
