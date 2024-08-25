@@ -1,5 +1,5 @@
 import { XIcon } from 'lucide-react';
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 
 // Define the type for an item
 interface Item {
