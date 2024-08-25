@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "../ui/card"
 import { Avatar as Avatar1 } from "../ui/avatar"
 import { Input } from "../ui/input"
@@ -66,7 +66,9 @@ export function FeedPost() {
                   <span className="sr-only">Add emoji</span>
                 </Button>
               </div>
-              <Button variant="blue" type="submit">Post</Button>
+              <Link to="/feed/post">
+                <Button variant="blue" type="submit">Post</Button>
+              </Link>
             </div>
           </form>
         </CardContent>

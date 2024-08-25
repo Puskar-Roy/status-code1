@@ -6,6 +6,7 @@ import ProfileSetup from "./components/profile/ProfileSetup";
 import Register from "./components/auth/Register";
 import ForgotPassword from "./components/auth/Forgot-Password";
 import Feed from "./components/feed/Feed";
+import Post from "./components/feed/Post";
 import OTP from "./components/auth/OTP";
 import { ThemeProvider } from "./context/ThemeCOntext";
 import { Toaster } from "./components/ui/toaster";
@@ -41,6 +42,7 @@ function App() {
           <Route path="/otp/:userId" element={<OTP />} />
           <Route path="/verify-email/:userId" element={<VerifiedPage />} />
           <Route path="/feeds" element={isProfileComplete ? <Feed /> : <Navigate to="/profile" />} />
+          <Route path="/feed/post" element={<Post/>} />
           <Route path="/contact" element={isProfileComplete ? <Contact /> : <Navigate to="/profile" />} />
           <Route path="/offer-support" element={isProfileComplete ? <Offer /> : <Navigate to="/profile" />} />
           <Route path="/marketplace" element={isProfileComplete ? <MarketPlace /> : <Navigate to="/profile" />} />
