@@ -14,6 +14,7 @@ import Contact from "./components/ui/Contact";
 import { useAuthContext } from "./hooks/useAuthContext";
 import VerifiedPage from "./components/auth/VerifiedPage";
 import Offer from "./components/offer request/Offer-request";
+import MarketPlace from "./components/market place/MarketPlace";
 import Hiring from "./components/hiring/Hired";
 import Not_Found from "./components/not found/Not_Found";
 import HelpRequest from "./components/help request/HelpRequest";
@@ -42,6 +43,7 @@ function App() {
           <Route path="/feeds" element={isProfileComplete ? <Feed /> : <Navigate to="/profile" />} />
           <Route path="/contact" element={isProfileComplete ? <Contact /> : <Navigate to="/profile" />} />
           <Route path="/offer-support" element={isProfileComplete ? <Offer /> : <Navigate to="/profile" />} />
+          <Route path="/marketplace" element={isProfileComplete ? <MarketPlace /> : <Navigate to="/profile" />} />
           <Route path="/hiring" element= {isProfileComplete ? <Hiring/> : <Navigate to="/profile" /> } />
           <Route path="/services" element={<ServiceP/>} />
           <Route path="/help-request" element={<HelpRequest />} />
