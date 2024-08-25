@@ -1,1 +1,1 @@
-RUN echo hello word
+RUN echo hello
