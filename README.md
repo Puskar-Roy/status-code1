@@ -7,6 +7,7 @@
   </a>
 
   <h1 align="center">CARE ✨</h1> 
+
  
   <p align="center">
     Welcome to the CARE. Our aim is to create a social service platform where users can offer or receive various types of social work!

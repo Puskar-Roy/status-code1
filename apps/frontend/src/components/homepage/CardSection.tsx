@@ -19,9 +19,9 @@ const CardsSection = () => {
 
     <div className="flex justify-center items-center flex-col sm:flex-row gap-2 sm:gap-[10rem] w-[80%] sm:w-full mb-16">
       
-      <div className="h-[250px] hidden md:block mb-[150px] ">
+      <div className="w-full h-[250px] md:block mb-[150px] ">
           <img
-            className="w-full  h-[380px]"
+            className="w-full h-[380px]"
             src={req_img}
             alt="Register illustration"
           />
@@ -60,7 +60,7 @@ const CardsSection = () => {
           makes it   simple  to <br/>trade on our MarketPlace.
         </h1>
       </div>
-      <div className="h-[250px] hidden md:block mb-[150px] ">
+      <div className=" w-full h-[250px] md:block mb-[150px] ">
           <img
             className="w-full  h-[380px]"
             src={was_img}
